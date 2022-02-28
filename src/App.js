@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import MyForm from './components/MyForm'
+import CustomerInfo from './components/CustomerInfo'
+import ShippingAddress from './components/ShippingAddress'
+import DiscountCoupon from './components/DiscountCoupon'
+import PaymentInfo from './components/PaymentInfo'
+import ShippingMethod from './components/ShippingMethod'
+import CheckingOut from './components/CheckingOut'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <MyForm/> */}
+      {/* <CustomerInfo /> */}
+      {/* <ShippingAddress/> */}
+      {/* <DiscountCoupon/> */}
+      {/* <PaymentInfo/> */}
+      {/* <ShippingMethod/> */}
+      <CheckingOut/>
     </div>
   );
 }

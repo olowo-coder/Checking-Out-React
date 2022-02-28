@@ -1,0 +1,78 @@
+:root {
+    --customColor: #081458;
+  }
+.container{
+    border-radius: 10px;
+    background-color: white;
+    /* border: #081158 solid 1px; */
+    margin: 3rem;
+    height: fit-content;
+    width: fit-content;
+    /* padding-top: 20px; */
+    padding-bottom: 20px;
+    overflow: auto;
+
+}
+.row{
+    display: flex;
+}
+.split{
+    justify-content: space-between;
+    border-bottom: #F5F5F5 solid 1px;
+}
+.design{
+    color: var(--customColor);
+    font-family: 'Sato', Courier, monospace;
+}
+.heading {
+    font-size: 25px;
+    font-weight: bold;
+}
+.title-content{
+    height: 30px;
+    padding: 15px;
+}
+
+.info-input{
+    display: block;
+    height: 50px;
+}
+.info-input label{
+    color: var(--customColor);
+    font-weight: bold;
+    font-family: 'Sato', Courier, monospace;
+}
+.info-input input[type="text"], 
+.info-input input[type="password"],
+.info-input input[type="tel"]{
+    border-radius: 6px;
+    height: 34px;
+    padding: 0 10px;
+    margin-top: 10px;
+    font-size:20px;
+    border: none;
+    background-color: #E8EAF4;
+}
+.big-input{
+    width: 97%;
+}
+
+.small-input{
+    width: 52%;
+}
+
+.divider{
+    width: 50%
+}
+
+.clean{
+    align-items: center;
+    padding: 15px;
+}
+.card-adjust{
+    margin-top: 30px;
+}
+
+.input-container{
+    margin-bottom: 20px;
+}
