@@ -1,78 +1,78 @@
 :root {
     --customColor: #081458;
   }
-.container{
+.PaymentInfo-container{
     border-radius: 10px;
     background-color: white;
     /* border: #081158 solid 1px; */
-    margin: 3rem;
+    margin: 1.4rem 1.4rem 1rem 3rem;
     height: fit-content;
-    width: fit-content;
+    /* width: fit-content; */
     /* padding-top: 20px; */
     padding-bottom: 20px;
     overflow: auto;
 
 }
-.row{
+.PaymentInfo-row{
     display: flex;
 }
-.split{
+.PaymentInfo-split{
     justify-content: space-between;
     border-bottom: #F5F5F5 solid 1px;
 }
-.design{
+.PaymentInfo-design{
     color: var(--customColor);
     font-family: 'Sato', Courier, monospace;
 }
-.heading {
+.PaymentInfo-heading {
     font-size: 25px;
     font-weight: bold;
 }
-.title-content{
+.PaymentInfo-title-content{
     height: 30px;
     padding: 15px;
 }
 
-.info-input{
+.PaymentInfo-info-input{
     display: block;
     height: 50px;
 }
-.info-input label{
+.PaymentInfo-info-input label{
     color: var(--customColor);
     font-weight: bold;
     font-family: 'Sato', Courier, monospace;
 }
-.info-input input[type="text"], 
-.info-input input[type="password"],
-.info-input input[type="tel"]{
+.PaymentInfo-info-input input[type="text"], 
+.PaymentInfo-info-input input[type="password"],
+.PaymentInfo-info-input input[type="tel"]{
     border-radius: 6px;
     height: 34px;
     padding: 0 10px;
     margin-top: 10px;
-    font-size:20px;
+    font-size:15px;
     border: none;
     background-color: #E8EAF4;
 }
-.big-input{
+.PaymentInfo-big-input{
     width: 97%;
 }
 
-.small-input{
-    width: 52%;
+.PaymentInfo-small-input{
+    width: 60%;
 }
 
-.divider{
+.PaymentInfo-divider{
     width: 50%
 }
 
-.clean{
+.PaymentInfo-clean{
     align-items: center;
     padding: 15px;
 }
-.card-adjust{
+.PaymentInfo-card-adjust{
     margin-top: 30px;
 }
 
-.input-container{
-    margin-bottom: 20px;
+.PaymentInfo-input-container{
+    margin-bottom: 0px;
 }

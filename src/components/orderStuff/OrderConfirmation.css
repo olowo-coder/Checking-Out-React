@@ -1,11 +1,11 @@
 :root {
     --customColor: #081458;
   }
-.ShippingAddress-container{
+.OrderConfirmation-container{
     border-radius: 10px;
     background-color: white;
     /* border: #081158 solid 1px; */
-    margin: 1.4rem 1.4rem 1rem 3rem;
+    margin: 3rem 1.4rem 1rem 3rem;
     height: auto;
     /* padding-top: 20px; */
     padding-bottom: 20px;
@@ -13,56 +13,46 @@
     overflow: auto;
 
 }
-.ShippingAddress-row{
+.OrderConfirmation-row{
     display: flex;
 }
-.ShippingAddress-split{
+.OrderConfirmation-split{
     justify-content: space-between;
     border-bottom: #F5F5F5 solid 1px;
 }
-.ShippingAddress-design{
+.OrderConfirmation-design{
     color: var(--customColor);
     font-family: 'Sato', Courier, monospace;
 }
-.ShippingAddress-heading {
+.OrderConfirmation-heading {
     font-size: 25px;
     font-weight: bold;
 }
-.ShippingAddress-title-content{
+.OrderConfirmation-title-content{
     height: 30px;
     padding: 15px;
 }
 
-.ShippingAddress-info-input{
+.OrderConfirmation-info-input{
     display: block;
     height: 50px;
 }
-.ShippingAddress-info-input label{
+.OrderConfirmation-info-input label{
     color: var(--customColor);
     font-weight: bold;
     font-family: 'Sato', Courier, monospace;
 }
-.ShippingAddress-info-input input[type="text"]{
+.OrderConfirmation-info-input input[type="text"]{
     border-radius: 6px;
-    height: 34px;
+    width: 97%;
     padding: 0 10px;
-    margin-top: 10px;
     font-size:15px;
+    height: 34px;
+    margin-top: 10px;
     border: none;
     background-color: #E8EAF4;
 }
-.ShippingAddress-big-input{
-    width: 97%;
-}
 
-.ShippingAddress-small-input{
-    width: 96%;
-}
-.ShippingAddress-all-small{
-    width: 98%;
-    align-items: flex-start;
-}
-
-.ShippingAddress-input-container{
+.OrderConfirmation-input-container{
     margin-bottom: 20px;
 }

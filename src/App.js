@@ -6,6 +6,9 @@ import DiscountCoupon from './components/DiscountCoupon'
 import PaymentInfo from './components/PaymentInfo'
 import ShippingMethod from './components/ShippingMethod'
 import CheckingOut from './components/CheckingOut'
+import OrderSummary from './components/OrderSummary'
+import OneItemOrder from './components/OneItemOrder'
+import ItemsOrder from './components/ItemsOrder'
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
       {/* <PaymentInfo/> */}
       {/* <ShippingMethod/> */}
       <CheckingOut/>
+      {/* <OrderSummary/> */}
+      {/* <OneItemOrder/> */}
+      {/* <ItemsOrder/> */}
     </div>
   );
 }

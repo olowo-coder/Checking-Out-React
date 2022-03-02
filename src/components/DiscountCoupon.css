@@ -1,60 +1,60 @@
 :root {
     --customColor: #081458;
   }
-.container{
+.DiscountCoupon-container{
     border-radius: 10px;
     background-color: white;
     /* border: #081158 solid 1px; */
-    margin: 3rem;
+    margin: 1.4rem 1.4rem 1rem 3rem;
     height: auto;
     /* padding-top: 20px; */
-    padding-bottom: 20px;
+    padding-bottom: 2px;
     overflow: auto;
     height: fit-content;
 
 }
-.row{
+.DiscountCoupon-row{
     display: flex;
     align-items: flex-end;
 }
-.split{
+.DiscountCoupon-split{
     justify-content: space-between;
     border-bottom: #F5F5F5 solid 1px;
 }
-.design{
+.DiscountCoupon-design{
     color: var(--customColor);
     font-family: 'Sato', Courier, monospace;
 }
-.heading {
+.DiscountCoupon-heading {
     font-size: 25px;
     font-weight: bold;
 }
-.title-content{
+.DiscountCoupon-title-content{
     height: 30px;
     padding: 15px;
 }
 
-.info-input{
+.DiscountCoupon-info-input{
     display: block;
     height: 50px;
 }
-.info-input label{
+.DiscountCoupon-info-input label{
     color: var(--customColor);
     font-weight: bold;
     font-family: 'Sato', Courier, monospace;
 }
-.info-input input[type="text"]{
+.DiscountCoupon-info-input input[type="text"]{
     border-radius: 6px;
     width: 97%;
     padding: 0 10px;
-    font-size:20px;
+    font-size: 15px;
     height: 34px;
     margin-top: 10px;
     border: none;
     background-color: #E8EAF4;
 }
 
-.info-input button{
+.DiscountCoupon-info-input button{
     color: white;
     font-weight: 300;
     height: 36px;
@@ -73,11 +73,11 @@
     font-family: 'Sato', Courier, monospace;
 }
 
-.info-input button:hover  {
+.DiscountCoupon-info-input button:hover  {
      transform: scale(1.05); 
      background: none;
     color: #8EA5A0;
     }
-    .input-container{
+    .DiscountCoupon-input-container{
         margin-bottom: 20px;
     }

@@ -15,33 +15,12 @@ import TextField from "@mui/material/TextField";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 
-function CustomerInfo() {
-  const [values, setValues] = useState({
-    amount: "",
-    password: "",
-    weight: "",
-    weightRange: "",
-    showPassword: false,
-  });
+function CustomerInfo({customerInfo, setCustomerInfo}) {
 
-  const handleChange = (prop) => (event) => {
-    setValues({ ...values, [prop]: event.target.value });
-  };
-
-  const handleClickShowPassword = () => {
-    setValues({
-      ...values,
-      showPassword: !values.showPassword,
-    });
-  };
-
-  const handleMouseDownPassword = (event) => {
-    event.preventDefault();
-  };
-  const handleSubmit = (evt) => {
-    evt.preventDefault();
-    console.log(values);
-  };
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setCustomerInfo({ [name]: value });
+  }
   return (
     <div>
       {/* <Container maxWidth="sm" >
@@ -58,14 +37,14 @@ function CustomerInfo() {
         </FormControl>
           </Box>
       </Container> */}
-      <div className="container">
-        <div className="row split title-content">
-          <div className="design heading">Customer Info</div>
-          <div className="design">*Required</div>
+      <div className="CustomerInfo-container">
+        <div className="CustomerInfo-row CustomerInfo-split CustomerInfo-title-content">
+          <div className="CustomerInfo-design CustomerInfo-heading">Customer Info</div>
+          <div className="CustomerInfo-design">*Required</div>
         </div>
-        <div className="info-input title-content input-container">
+        <div className="CustomerInfo-info-input CustomerInfo-title-content CustomerInfo-input-container">
           <label>Email* </label>
-          <input type="text" name="customer-info" value={values.customer} />
+          <input type="text" name="email"  onChange={handleInputChange}/>
         </div>
       </div>
     </div>

@@ -3,14 +3,18 @@ import "./DiscountCoupon.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGift } from '@fortawesome/free-solid-svg-icons'
 
-const DiscountCoupon = () => {
+const DiscountCoupon = ({setDiscount, discount}) => {
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setDiscount({ [name]: value });
+      }
   return (
     <div>
-        <div className="container">
-        <div className="info-input title-content input-container">
+        <div className="DiscountCoupon-container">
+        <div className="DiscountCoupon-info-input DiscountCoupon-title-content DiscountCoupon-input-container">
           <label>Discount Code </label>
-          <div className="row">
-          <input type="text" name="customer-info" /><button><FontAwesomeIcon icon={faGift} /> APPLY</button>
+          <div className="DiscountCoupon-row">
+          <input type="text" name="code"  onChange={handleInputChange} /><button><FontAwesomeIcon icon={faGift} /> APPLY</button>
           </div>
         </div>
       </div>
