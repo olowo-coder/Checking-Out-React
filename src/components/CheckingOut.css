@@ -86,3 +86,25 @@
 /* .CheckingOut-right-order{
     position: fixed;
 } */
+
+.CheckingOut-place-pay-now button{
+    width: 320px;
+    color: white;
+    font-weight: 300;
+    height: 55px;
+    border: none;
+    font-size: 25px;
+    background-color: #0c640c;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display:block;
+    text-decoration: none;
+    font-family: 'Sato', Courier, monospace;
+  }
+
+  .CheckingOut-place-pay-now button:hover  {
+    transform: scale(1.05); 
+    /* background: none;
+   color: #0c640c; */
+   }

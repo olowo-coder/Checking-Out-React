@@ -31,11 +31,11 @@ const PaymentInfo = ({setCardInfo, cardInfo}) => {
         <div className="PaymentInfo-row PaymentInfo-clean">
           <div className="PaymentInfo-card-adjust">
             <Cards
-              cvc={cardInfo.cvc || ''}
-              expiry={cardInfo.expiry || ''}
+              cvc={cardInfo.cvcNumber || ''}
+              expiry={cardInfo.expiringDate || ''}
               focused={cardInfo.focus || ''}
               name={cardInfo.name || ''}
-              number={cardInfo.number || ''}
+              number={cardInfo.cardNumber || ''}
             />
           </div>
           <div>
@@ -43,8 +43,8 @@ const PaymentInfo = ({setCardInfo, cardInfo}) => {
               <label>Card Number* </label>
               <input
                 className="PaymentInfo-big-input"
-                name="number"
-                // value={number}
+                name="cardNumber"
+                value={cardInfo.cardNumber || ''}
                 onChange={handleInputChange}
                 onFocus={(e) => setFocus(e.target.name)}
                 type="text"
@@ -55,8 +55,8 @@ const PaymentInfo = ({setCardInfo, cardInfo}) => {
               <input
                 maxLength="5"
                 type="text"
-                name="expiry"
-                // value={expiry}
+                name="expiringDate"
+                value={cardInfo.expiringDate || ''}
                 onChange={handleInputChange}
                 onFocus={(e) => setFocus(e.target.name)}
               />
@@ -65,8 +65,8 @@ const PaymentInfo = ({setCardInfo, cardInfo}) => {
               <label>Card CVC* </label>
               <input
                 type="password"
-                name="CVC"
-                // value={cvc}
+                name="cvcNumber"
+                value={cardInfo.cvcNumber || ''}
                 onChange={handleInputChange}
                 onFocus={(e) => setFocus(e.target.name)}
               />

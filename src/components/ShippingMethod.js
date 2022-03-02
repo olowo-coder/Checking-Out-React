@@ -16,7 +16,7 @@ const ShippingMethod = ({setShipMethod}) => {
         </div>
         <div className="ShippingMethod-method-container ShippingMethod-title-content ShippingMethod-row">
           <div>
-            <input type="radio" name="ship-method" value={"flat-rate"} onChange={handleInputChange} />
+            <input type="radio" name="shipWay" value={"flat-rate"} onChange={handleInputChange} />
           </div>
           <div className="ShippingMethod-method-dep">
             <div className="ShippingMethod-method-title">Flat rate</div>
@@ -26,7 +26,7 @@ const ShippingMethod = ({setShipMethod}) => {
         </div>
         <div className="ShippingMethod-method-container ShippingMethod-title-content ShippingMethod-row">
           <div>
-            <input type="radio" name="ship-method" value={"Expedited"} onChange={handleInputChange} />
+            <input type="radio" name="shipWay" value={"Expedited"} onChange={handleInputChange} />
           </div>
           <div className="ShippingMethod-method-dep">
             <div className="ShippingMethod-method-title">Expedited Shipping </div>
@@ -36,7 +36,7 @@ const ShippingMethod = ({setShipMethod}) => {
         </div>
         <div className="ShippingMethod-method-container ShippingMethod-title-content ShippingMethod-row">
           <div>
-            <input type="radio" name="ship-method" value={"Overnight"} onChange={handleInputChange}/>
+            <input type="radio" name="shipWay" value={"Overnight"} onChange={handleInputChange}/>
           </div>
           <div className="ShippingMethod-method-dep">
             <div className="ShippingMethod-method-title">Overnight Shipping</div>

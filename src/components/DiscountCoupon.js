@@ -14,7 +14,7 @@ const DiscountCoupon = ({setDiscount, discount}) => {
         <div className="DiscountCoupon-info-input DiscountCoupon-title-content DiscountCoupon-input-container">
           <label>Discount Code </label>
           <div className="DiscountCoupon-row">
-          <input type="text" name="code"  onChange={handleInputChange} /><button><FontAwesomeIcon icon={faGift} /> APPLY</button>
+          <input type="text" name="couponCode" value={discount.couponCode || ''}  onChange={handleInputChange} /><button><FontAwesomeIcon icon={faGift} /> APPLY</button>
           </div>
         </div>
       </div>

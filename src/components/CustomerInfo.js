@@ -44,7 +44,7 @@ function CustomerInfo({customerInfo, setCustomerInfo}) {
         </div>
         <div className="CustomerInfo-info-input CustomerInfo-title-content CustomerInfo-input-container">
           <label>Email* </label>
-          <input type="text" name="email"  onChange={handleInputChange}/>
+          <input type="text" name="email" value={customerInfo.email || ''}  onChange={handleInputChange} required/>
         </div>
       </div>
     </div>

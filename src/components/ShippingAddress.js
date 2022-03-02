@@ -27,29 +27,29 @@ const ShippingAddress = ({addressName, setShipping, shipping, onChange }) => {
         </div>
         <div className="ShippingAddress-info-input ShippingAddress-title-content ShippingAddress-input-container">
           <label>Full Name* </label>
-          <input className="ShippingAddress-big-input"  onChange={handleInputChange} type="text" name="fullName"/>
+          <input className="ShippingAddress-big-input" value={shipping.fullName || ''}  onChange={handleInputChange} type="text" name="fullName"/>
         </div>
         <div className="ShippingAddress-info-input ShippingAddress-title-content ShippingAddress-input-container">
           <label>Street Address* </label>
-          <input className="ShippingAddress-big-input" onChange={handleInputChange} type="text" name="streetAddress" />
+          <input className="ShippingAddress-big-input" value={shipping.streetDetail || ''} onChange={handleInputChange} type="text" name="streetDetail" />
         </div>
         <div className="ShippingAddress-row ShippingAddress-all-small">
           <div className="ShippingAddress-info-input ShippingAddress-title-content ShippingAddress-input-container">
             <label>City* </label>
-            <input className="ShippingAddress-small-input"  onChange={handleInputChange} type="text" name="city" />
+            <input className="ShippingAddress-small-input" value={shipping.city || ''}  onChange={handleInputChange} type="text" name="city" />
           </div>
           <div className="ShippingAddress-info-input ShippingAddress-title-content ShippingAddress-input-container">
             <label>State/province* </label>
-            <input className="ShippingAddress-small-input" onChange={handleInputChange} type="text" name="state" />
+            <input className="ShippingAddress-small-input" value={shipping.state || ''} onChange={handleInputChange} type="text" name="state" />
           </div>
           <div className="ShippingAddress-info-input ShippingAddress-title-content ShippingAddress-input-container">
             <label>Zip/Postal Code* </label>
-            <input className="ShippingAddress-small-input"  onChange={handleInputChange} type="text" name="zipCode" />
+            <input className="ShippingAddress-small-input" value={shipping.zipCode || ''} onChange={handleInputChange} type="text" name="zipCode" />
           </div>
         </div>
         <div className="ShippingAddress-info-input ShippingAddress-title-content ShippingAddress-input-container">
           <label>Country* </label>
-          <input className="ShippingAddress-big-input" onChange={handleInputChange} type="text" name="country" />
+          <input className="ShippingAddress-big-input" value={shipping.country || ''} onChange={handleInputChange} type="text" name="country" />
         </div>
       </div>
     </div>
