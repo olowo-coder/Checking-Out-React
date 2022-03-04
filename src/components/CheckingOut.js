@@ -28,6 +28,7 @@ function CheckingOut() {
   const [cardInfo, setCardInfo] = useState({});
   const [shipping, setShipping] = useState({});
   const [billing, setBilling] = useState({});
+  const API_BASE_URL = "http://fitnesso/app";
 //   const [isFilled, setIsFilled] = useState(false);
 
   const [allData, setAllData] = useState({});
@@ -52,6 +53,32 @@ function CheckingOut() {
     console.log(allData);
     navigate("/checkout/order-confirmation");
   };
+
+  const checkOutRequest = async (makeCheckOut) => {
+    console.log(makeCheckOut);
+    const res = await fetch(`${API_BASE_URL}/hello/start`,{
+        method: "POST",
+        mode: 'cors',
+        headers: {
+            "Authorization": 'Bearer ',
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(makeCheckOut),
+      });
+    const data = await res.json();
+    console.log(data);
+    if(data.status === 200) {
+        navigate("/home")
+    }
+    else if(data.status === 403){
+        navigate("/login")
+    }
+  };
+
+  const handleRequest = () => {
+    console.log(allData);
+    checkOutRequest(allData);
+  }
 
   return (
     <div className="CheckingOut-row">
@@ -100,7 +127,7 @@ function CheckingOut() {
               path="order-confirmation"
               element={
                 <div className="CheckingOut-place-pay-now">
-                <button><FontAwesomeIcon icon={faMoneyBillWave} /> PAY NOW</button>
+                <button onClick={handleRequest}><FontAwesomeIcon icon={faMoneyBillWave} /> PAY NOW</button>
                 </div>}
             />
             <Route
