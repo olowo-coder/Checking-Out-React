@@ -11,6 +11,7 @@ import OrderSummary from './components/OrderSummary'
 import OneItemOrder from './components/OneItemOrder'
 import ItemsOrder from './components/ItemsOrder'
 import OrderConfirmation from "./components/orderStuff/OrderConfirmation";
+import EmailCheck from "./components/emailVerificaton/EmailCheck";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         </nav>
         <Routes>
           <Route exact path="/checkout/*" element={<CheckingOut/>} />
+          <Route exact path="/verify-email/*" element={<EmailCheck/>} />
           <Route path="/" element={(
             <div>
               <h2>Test Page</h2>
